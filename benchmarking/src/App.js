@@ -1,5 +1,7 @@
 import "./App.css";
 import Header from "./Header";
+import SeasonMenu from "./SeasonMenu";
+import Rewards from "./Rewards";
 
 function App() {
     return (
@@ -9,6 +11,8 @@ function App() {
             </head>
             <body>
                 <Header />
+                <SeasonMenu />
+                <Rewards />
                 <footer></footer>
             </body>
         </>

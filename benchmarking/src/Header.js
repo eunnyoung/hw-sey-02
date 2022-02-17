@@ -8,11 +8,24 @@ function Header() {
   return (
       <>
           {/* <img src="logo.png" alt="로고 첨부" /> */}
-          <icons className="icons">
-              <MdPerson />
-              <ImLocation />
-              <FaBars />
-          </icons>
+          <div>
+              <icons className="icons">
+                  <MdPerson />
+                  <ImLocation />
+                  <FaBars />
+              </icons>
+          </div>
+
+          <div>
+              <ul className="menu">
+                  <li>COFFEE</li>
+                  <li>MENU</li>
+                  <li>STORE</li>
+                  <li>RESPONSIBILTY</li>
+                  <li>STARBUCS REWARDS</li>
+                  <li>WHAT'S NEW</li>
+              </ul>
+          </div>
       </>
   );
 }
