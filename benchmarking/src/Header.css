@@ -1,6 +1,5 @@
 * {
     background-color: rgb(255, 252, 246);
-    padding: 0%;
 }
 .icons {
     height: 100px;
@@ -9,15 +8,16 @@
 }
 
 .menu {
+    height: 20%;
     list-style: none;
-    /* float: left; */
-    text-align: center;
-    padding: 0%;    
-
+    /* padding: 0%; */
+    display: flex;
+    justify-content: flex-end;
 }
 
-.li {
+.menu > li {
     float:left;
-    margin: 0%;
+    translate: 100%;
+    margin-left: 5%;
     
 }

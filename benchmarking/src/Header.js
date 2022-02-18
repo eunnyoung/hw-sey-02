@@ -8,13 +8,13 @@ function Header() {
   return (
       <>
           {/* <img src="logo.png" alt="로고 첨부" /> */}
-          <div>
+          {/* <div>
               <icons className="icons">
                   <MdPerson />
                   <ImLocation />
                   <FaBars />
               </icons>
-          </div>
+          </div> */}
 
           <div>
               <ul className="menu">
