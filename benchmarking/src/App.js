@@ -11,7 +11,7 @@ function App() {
             </head>
             <body>
                 <Header />
-                {/* <SeasonMenu /> */}
+                <SeasonMenu />
                 {/* <Rewards /> */}
                 <footer></footer>
             </body>

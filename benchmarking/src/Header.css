@@ -1,23 +1,42 @@
-* {
-    background-color: rgb(255, 252, 246);
-}
-.icons {
-    height: 100px;
-    size: 50rem;
-    align-items: flex-end;
+.Header{
+    background-color: rgb(255, 248, 232);
+    justify-content: flex-end;
+    padding-inline: 10%;
 }
 
-.menu {
-    height: 20%;
+img {
+    width: 7%;
+    /* padding: 10px; */
+}
+ul {
     list-style: none;
-    /* padding: 0%; */
     display: flex;
     justify-content: flex-end;
+    margin:0;
 }
 
-.menu > li {
+.nav01 {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin-inline: 5%;
+}
+
+.nav01 > li {
+    float:left;
+    font-size: 13px;
+    margin: 10px;
+}
+
+.nav01 > hr {
+    margin: 10px;
+}
+
+.nav01 > button {
+    margin: 5px;
+}
+.nav02 > li {
     float:left;
     translate: 100%;
-    margin-left: 5%;
-    
+    margin: 20px;
 }

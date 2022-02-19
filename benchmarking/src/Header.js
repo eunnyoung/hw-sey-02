@@ -1,30 +1,39 @@
-// import "./logo.png";
-import { MdPerson } from "react-icons/md";
-import { ImLocation } from "react-icons/im";
-import { FaBars } from "react-icons/fa";
+// import { MdPerson } from "react-icons/md";
+// import { ImLocation } from "react-icons/im";
+// import { FaBars } from "react-icons/fa";
+import { GiMagnifyingGlass } from "react-icons/gi";
 import './Header.css';
+import logo from "./logo.png";
 
 function Header() {
   return (
       <>
-          {/* <img src="logo.png" alt="로고 첨부" /> */}
-          {/* <div>
-              <icons className="icons">
-                  <MdPerson />
-                  <ImLocation />
-                  <FaBars />
-              </icons>
-          </div> */}
-
-          <div>
-              <ul className="menu">
-                  <li>COFFEE</li>
-                  <li>MENU</li>
-                  <li>STORE</li>
-                  <li>RESPONSIBILTY</li>
-                  <li>STARBUCS REWARDS</li>
-                  <li>WHAT'S NEW</li>
-              </ul>
+          <div className="Header">
+                  <img src={logo} alt="logo" />
+              <div>
+                  <ul className="nav01">
+                      <li>Sign in</li>
+                      <hr />
+                      <li>My Starbucks</li>
+                      <hr />
+                      <li>Customer Service & Ideas</li>
+                      <hr />
+                      <li>Find a Store</li>
+                      <button>
+                          <GiMagnifyingGlass />
+                      </button>
+                  </ul>
+              </div>
+              <div>
+                  <ul className="nav02">
+                      <li>COFFEE</li>
+                      <li>MENU</li>
+                      <li>STORE</li>
+                      <li>RESPONSIBILTY</li>
+                      <li>STARBUCKS REWARDS</li>
+                      <li>WHAT'S NEW</li>
+                  </ul>
+              </div>
           </div>
       </>
   );
