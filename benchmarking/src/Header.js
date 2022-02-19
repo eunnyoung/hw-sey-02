@@ -9,7 +9,9 @@ function Header() {
   return (
       <>
           <div className="Header">
+              <div className="img">
                   <img src={logo} alt="logo" />
+              </div>
               <div>
                   <ul className="nav01">
                       <li>Sign in</li>
@@ -23,8 +25,6 @@ function Header() {
                           <GiMagnifyingGlass />
                       </button>
                   </ul>
-              </div>
-              <div>
                   <ul className="nav02">
                       <li>COFFEE</li>
                       <li>MENU</li>
