@@ -1,20 +1,15 @@
 import "./App.css";
-import Header from "./Header";
-import SeasonMenu from "./SeasonMenu";
-import Rewards from "./Rewards";
+import Header from "./components/Header";
+import SeasonMenu from "./components/SeasonMenu";
+import Rewards from "./components/Rewards";
 
 function App() {
     return (
         <>
-            <head>
-                <title>Stars</title>
-            </head>
-            <body>
                 <Header />
                 <SeasonMenu />
                 {/* <Rewards /> */}
                 <footer></footer>
-            </body>
         </>
     );
 }
