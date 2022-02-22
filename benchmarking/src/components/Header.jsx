@@ -1,16 +1,13 @@
-// import { MdPerson } from "react-icons/md";
-// import { ImLocation } from "react-icons/im";
-// import { FaBars } from "react-icons/fa";
 import { GiMagnifyingGlass } from "react-icons/gi";
 import './Header.css';
-import logo from "./logo.png";
+import styled from "styled-components";
 
 function Header() {
   return (
       <>
           <div className="Header">
               <div className="img">
-                  <img src={logo} alt="logo" />
+                  <img src="https://www.starbucks.co.kr/common/img/common/logo.png" alt="logo" />
               </div>
               <div>
                   <ul className="nav01">
@@ -22,7 +19,7 @@ function Header() {
                       <hr />
                       <li>Find a Store</li>
                       <button>
-                          <GiMagnifyingGlass />
+                          <img src="https://image.istarbucks.co.kr/common/img/common/icon_magnifier_black.png" alt="magnify"/>
                       </button>
                   </ul>
                   <ul className="nav02">

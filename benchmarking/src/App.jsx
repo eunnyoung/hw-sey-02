@@ -1,4 +1,3 @@
-import "./App.css";
 import Header from "./components/Header";
 import SeasonMenu from "./components/SeasonMenu";
 import Rewards from "./components/Rewards";
