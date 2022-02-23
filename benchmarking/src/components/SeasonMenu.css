@@ -1,5 +1,41 @@
 .SeasonMenu {
     background: linear-gradient( rgb(195, 253, 255) 60%, rgb(255, 211, 218) 40%);
     height: 600px;
+    padding-inline: 20%;
 }
 
+.halfCircle {
+    width: 300px;
+    height: 180px;
+    background: linear-gradient(rgb(153, 252, 255), rgb(252, 197, 206));
+    border-radius: 150px 150px 0px 0px;
+    position: relative;
+    right: -37.5%;
+    /* top: 30%; */
+    justify-content: center;
+    /* z-index: 1; */
+}
+
+.slogan {
+    margin-top: 70px;
+    margin-left: 0;
+}
+
+.lookup {
+    margin-top: 40px;
+    margin-left: 100px;
+}
+
+.lookup > a {
+    z-index: 1;
+    padding: 10px;
+    padding-inline: 30px;
+    border: solid;
+    border-radius: 5px;
+    border-color: rgb(255, 122, 144);
+    color:rgb(255, 86, 114);
+}
+
+.strawberryDrink {
+    z-index: 2;
+}
