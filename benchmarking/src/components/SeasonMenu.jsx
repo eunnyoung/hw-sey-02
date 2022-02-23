@@ -22,11 +22,10 @@ function SeasonMenu() {
                 <div className="lookup">
                     <a>자세히 보기</a>
                 </div>
-                <div className="halfCircle">
-                    <img className="latte" src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_latte.png" alt="img" />
-                    <img className="strawberryDrink" src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_drink_2.png" alt="img" />
-                    <img className="strawberryFrap" src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_frappuccino_0203.png" alt="img" />
-                </div>
+                <div className="halfCircle" />
+                <img className="latte" src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_latte.png" alt="img" />
+                <img className="strawberryDrink" src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_drink_2.png" alt="img" />
+                <img className="strawberryFrap" src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_frappuccino_0203.png" alt="img" />
             </div>
         </>
     );
