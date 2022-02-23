@@ -10,7 +10,7 @@
     background: linear-gradient(rgb(153, 252, 255), rgb(252, 197, 206));
     border-radius: 150px 150px 0px 0px;
     position: relative;
-    right: -52.5%;
+    right: -50.5%;
     top: -21.5%;
     justify-content: center;
     z-index: 1;
@@ -38,8 +38,8 @@
 
 .latte {
     position: relative;
-    margin-top: -25%;
-    margin-left: 11%;
+    margin-top: -22%;
+    margin-left: 15%;
     z-index: 2;
 }
 
@@ -56,6 +56,6 @@
     position: relative;
     padding-bottom: 2%;
     margin-top: -100%;
-    margin-left: 80%;
+    margin-left: 76%;
     z-index: 2;
 }
