@@ -1,39 +1,92 @@
-import { GiMagnifyingGlass } from "react-icons/gi";
-import './Header.css';
-import styled from "styled-components";
+import styled, { css } from 'styled-components';
 
 function Header() {
   return (
       <>
-          <div className="Header">
-              <div className="img">
-                  <img src="https://www.starbucks.co.kr/common/img/common/logo.png" alt="logo" />
-              </div>
+          <Head>
+              <Img>
+                  <Logo src="https://www.starbucks.co.kr/common/img/common/logo.png" alt="logo" />
+              </Img>
               <div>
-                  <ul className="nav01">
-                      <li>Sign in</li>
-                      <hr />
-                      <li>My Starbucks</li>
-                      <hr />
-                      <li>Customer Service & Ideas</li>
-                      <hr />
-                      <li>Find a Store</li>
-                      <button>
+                  <Nav01>
+                      <Li01>Sign in</Li01>
+                      <Hr />
+                      <Li01>My Starbucks</Li01>
+                      <Hr />
+                      <Li01>Customer Service & Ideas</Li01>
+                      <Hr />
+                      <Li01>Find a Store</Li01>
+                      <Button>
                           <img src="https://image.istarbucks.co.kr/common/img/common/icon_magnifier_black.png" alt="magnify"/>
-                      </button>
-                  </ul>
-                  <ul className="nav02">
-                      <li>COFFEE</li>
-                      <li>MENU</li>
-                      <li>STORE</li>
-                      <li>RESPONSIBILTY</li>
-                      <li>STARBUCKS REWARDS</li>
-                      <li>WHAT'S NEW</li>
-                  </ul>
+                      </Button>
+                  </Nav01>
+                  <Nav02>
+                      <Li02>COFFEE</Li02>
+                      <Li02>MENU</Li02>
+                      <Li02>STORE</Li02>
+                      <Li02>RESPONSIBILTY</Li02>
+                      <Li02>STARBUCKS REWARDS</Li02>
+                      <Li02>WHAT'S NEW</Li02>
+                  </Nav02>
               </div>
-          </div>
+          </Head>
       </>
   );
 }
 
 export default Header;
+
+const Head = styled.div`
+    background-color: rgb(255, 248, 232);
+    justify-content: flex-end;
+    padding-inline: 20%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+`;
+
+const Img = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+`;
+
+const Logo = styled.img`
+    width: 60px;
+`;
+
+const Nav01 = styled.ul`
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin:0;
+    margin-inline: 5%;
+`;
+
+const Nav02 = styled.ul`
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin:0;
+`;
+
+const Li01 = styled.li`
+    float:left;
+    font-size: 80%;
+    margin: 10px;
+    margin-top: 13px;
+`;
+
+const Li02 = styled.li`
+    float:left;
+    font-size: 90%;
+    margin: 20px;
+`;
+
+const Hr = styled.hr`
+    margin: 10px;
+    margin-top: 13px;
+`;
+
+const Button = styled.button`
+    margin: 5px;
+`;
