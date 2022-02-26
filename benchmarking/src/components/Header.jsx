@@ -17,11 +17,22 @@ function Header() {
                       <Hr />
                       <Li01>Find a Store</Li01>
                       <Button>
-                          <img src="https://image.istarbucks.co.kr/common/img/common/icon_magnifier_black.png" alt="magnify"/>
+                          <img src="https://image.istarbucks.co.kr/common/img/common/icon_magnifier_black.png" alt="magnify" />
                       </Button>
                   </Nav01>
                   <Nav02>
                       <Li02>COFFEE</Li02>
+                      <A>
+                          <li>
+                              <a href="#">Link 1</a>
+                          </li>
+                          <li>
+                              <a href="#">Link 2</a>
+                          </li>
+                          <li>
+                              <a href="#">Link 3</a>
+                          </li>
+                      </A>
                       <Li02>MENU</Li02>
                       <Li02>STORE</Li02>
                       <Li02>RESPONSIBILTY</Li02>
@@ -35,6 +46,11 @@ function Header() {
 }
 
 export default Header;
+
+const A =styled.ul`
+    list-style: none;
+    display:none;
+`;
 
 const Head = styled.div`
     background-color: rgb(255, 248, 232);
@@ -74,12 +90,23 @@ const Li01 = styled.li`
     font-size: 80%;
     margin: 10px;
     margin-top: 13px;
+    &:hover {
+        text-decoration: underline;
+    }
 `;
 
 const Li02 = styled.li`
     float:left;
     font-size: 90%;
-    margin: 20px;
+    margin: 0;
+    padding: 20px;
+    margin-top: 10px;
+    padding-top: 10px;
+    &:hover {
+        color: #00a000;
+        text-decoration: underline;
+        background-color: black;
+    }
 `;
 
 const Hr = styled.hr`

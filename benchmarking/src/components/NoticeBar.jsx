@@ -6,8 +6,8 @@ function NoticeBar() {
       <MidBar>
           <Notice>
               <Text>
-                  <A1>공지사항</A1>
-                  <A1>시스템 개선 및 점검 안내</A1>
+                  <A11>공지사항</A11>
+                  <A12>시스템 개선 및 점검 안내</A12>
               </Text>
               <Plus><BsPlusCircle size="36px"/></Plus>
           </Notice>
@@ -32,14 +32,22 @@ const Notice = styled.div`
     color: white;
     display: flex;
     align-items: center;
-    // justify-content: center;
 `;
 
 const Text = styled.div`
     margin-left: 40%;
 `;
-const A1 = styled.a`
+
+const A11 = styled.a`
   margin-left: 10px;
+  font-weight: bold;
+`;
+
+const A12 = styled.a`
+  margin-left: 10px;
+  &: hover {
+    text-decoration: underline;
+  }
 `;
 
 const Plus = styled.span`
@@ -55,6 +63,7 @@ const Promotion = styled.div`
 
 const A2 = styled.a`
   margin-left: 20%;
+  font-weight: bold;
 `;
 
 const Img = styled.img`
