@@ -21,18 +21,20 @@ function Header() {
                       </Button>
                   </Nav01>
                   <Nav02>
-                      <Li02>COFFEE</Li02>
-                      <A>
-                          <li>
-                              <a href="#">Link 1</a>
-                          </li>
-                          <li>
-                              <a href="#">Link 2</a>
-                          </li>
-                          <li>
-                              <a href="#">Link 3</a>
-                          </li>
-                      </A>
+                      <Li02>
+                          COFFEE
+                          <Ul>
+                              <li>
+                                  <A href="#">커피</A>
+                              </li>
+                              <li>
+                                  <A href="#">커피 이야기</A>
+                              </li>
+                              <li>
+                                  <A href="#">나와 어울리는 커피</A>
+                              </li>
+                          </Ul>
+                      </Li02>
                       <Li02>MENU</Li02>
                       <Li02>STORE</Li02>
                       <Li02>RESPONSIBILTY</Li02>
@@ -46,11 +48,6 @@ function Header() {
 }
 
 export default Header;
-
-const A =styled.ul`
-    list-style: none;
-    display:none;
-`;
 
 const Head = styled.div`
     background-color: rgb(255, 248, 232);
@@ -107,6 +104,19 @@ const Li02 = styled.li`
         text-decoration: underline;
         background-color: black;
     }
+`;
+
+const Ul =styled.ul`
+    list-style: none;
+    display:none;
+    ${Li02}:hover & {
+        display: block;
+    }
+`;
+
+const A = styled.li`
+    color: white;
+    text-decoration: none;
 `;
 
 const Hr = styled.hr`
