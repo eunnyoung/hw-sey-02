@@ -21,19 +21,13 @@ function Header() {
                       </Button>
                   </Nav01>
                   <Nav02>
-                      <Li02>
-                          COFFEE
-                          <Ul>
-                              <li>
-                                  <A href="#">커피</A>
-                              </li>
-                              <li>
-                                  <A href="#">커피 이야기</A>
-                              </li>
-                              <li>
-                                  <A href="#">나와 어울리는 커피</A>
-                              </li>
-                          </Ul>
+                  <Li02>
+              <LiTitle>COFFEE</LiTitle>
+              <Ul>
+                <A>커피</A>
+                <A>커피 이야기</A>
+                <A href="#">나와 어울리는 커피</A>
+              </Ul>
                       </Li02>
                       <Li02>MENU</Li02>
                       <Li02>STORE</Li02>
@@ -93,18 +87,22 @@ const Li01 = styled.li`
 `;
 
 const Li02 = styled.li`
-    float:left;
-    font-size: 90%;
-    margin: 0;
-    padding: 20px;
-    margin-top: 10px;
-    padding-top: 10px;
-    &:hover {
-        color: #00a000;
-        text-decoration: underline;
-        background-color: black;
+  float: left;
+  font-size: 90%;
+  margin: 0;
+  padding: 20px;
+  margin-top: 10px;
+  padding-top: 10px;
+  :hover {
+    div {
+      text-decoration: underline;
     }
+    color: #00A000;
+    background-color: black;
+  }
 `;
+
+const LiTitle = styled.div``;
 
 const Ul =styled.ul`
     list-style: none;
