@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 
 function SeasonMenu() {
     return (
-        <>
             <Wrap>
                 <Slogan src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Spring_main_slogan.png" />
                 <Lookup>
@@ -11,11 +10,10 @@ function SeasonMenu() {
                 <HalfCircle />
                 <div className="menuWrap">
                     <Latte src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_latte.png" alt="img" />
-                    <StrawberryDrink src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_drink_2.png" alt="img" />
-                    <StrawberryFrap src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_frappuccino_0203.png" alt="img" />
+                    {/* <StrawberryDrink src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_drink_2.png" alt="img" /> */}
+                    {/* <StrawberryFrap src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_frappuccino_0203.png" alt="img" /> */}
                 </div>
             </Wrap>
-        </>
     );
 }
 
@@ -24,8 +22,16 @@ export default SeasonMenu;
 const Wrap = styled.div`
     background: linear-gradient( rgb(195, 253, 255) 60%, rgb(255, 211, 218) 40%);
     height: 600px;
+    /* width:100%; */
     padding-inline: 20%;
+    /* position: relative; */
+    position: absolute;
+`;
+
+const Slogan = styled.img`
     position: relative;
+    margin-top: 10%;;
+    margin-left: 0;
 `;
 
 const Lookup = styled.div`
@@ -42,11 +48,6 @@ const BtnBorder = styled.div`
     border-radius: 5px;
     border-color: rgb(255, 122, 144);
     color:rgb(255, 86, 114);
-`;
-
-const Slogan = styled.img`
-    margin-top: 70px;
-    margin-left: 0;
 `;
 
 const HalfCircle = styled.div`

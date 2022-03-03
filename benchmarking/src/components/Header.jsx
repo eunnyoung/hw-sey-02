@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 
 function Header() {
   return (
-      <>
           <Head>
               <Img>
                   <Logo src="https://www.starbucks.co.kr/common/img/common/logo.png" alt="logo" />
@@ -21,13 +20,13 @@ function Header() {
                       </Button>
                   </Nav01>
                   <Nav02>
-                  <Li02>
-              <LiTitle>COFFEE</LiTitle>
-              <Ul>
-                <A>커피</A>
-                <A>커피 이야기</A>
-                <A href="#">나와 어울리는 커피</A>
-              </Ul>
+                      <Li02>
+                          <LiTitle>COFFEE</LiTitle>
+                          <Ul>
+                              <A>커피</A>
+                              <A>커피 이야기</A>
+                              <A href="#">나와 어울리는 커피</A>
+                          </Ul>
                       </Li02>
                       <Li02>MENU</Li02>
                       <Li02>STORE</Li02>
@@ -37,7 +36,6 @@ function Header() {
                   </Nav02>
               </div>
           </Head>
-      </>
   );
 }
 
@@ -45,16 +43,18 @@ export default Header;
 
 const Head = styled.div`
     background-color: rgb(255, 248, 232);
-    justify-content: flex-end;
-    padding-inline: 20%;
+    justify-content: center;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    padding-inline: 20%;
+    @media screen and (max-width: 955px) {
+        padding-inline: 3%;
+    }
 `;
 
 const Img = styled.div`
     display: flex;
     align-items: center;
-    justify-content: flex-start;
 `;
 
 const Logo = styled.img`
@@ -67,6 +67,9 @@ const Nav01 = styled.ul`
     justify-content: flex-end;
     margin:0;
     margin-inline: 5%;
+    @media screen and (max-width: 955px) {
+        display: none;
+    }
 `;
 
 const Nav02 = styled.ul`

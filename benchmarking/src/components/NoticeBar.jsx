@@ -1,21 +1,32 @@
 import styled, { css } from 'styled-components';
-import { BsPlusCircle } from "react-icons/bs"
+import { BsPlusCircle } from "react-icons/bs";
+import TextLoop from "react-text-loop";
+import Link from "react-router";
 
 function NoticeBar() {
   return (
+    <div>
       <MidBar>
           <Notice>
               <Text>
                   <A11>공지사항</A11>
-                  <A12>시스템 개선 및 점검 안내</A12>
+                  <TextLoop>
+                      <A12>First item</A12>
+                      <A12>Second item</A12>
+                      <A12>Third item</A12>
+                  </TextLoop>
               </Text>
-              <Plus><BsPlusCircle size="36px"/></Plus>
+              <Plus>
+                  <BsPlusCircle size="36px" />
+              </Plus>
           </Notice>
           <Promotion>
               <A2>스타벅스 프로모션</A2>
               <Img src="https://image.istarbucks.co.kr/common/img/common/btn_prom_down.png" alt="img" />
           </Promotion>
       </MidBar>
+    </div>
+
   );
 }
 
@@ -36,6 +47,7 @@ const Notice = styled.div`
 
 const Text = styled.div`
     margin-left: 40%;
+    width: 180px;
 `;
 
 const A11 = styled.a`
@@ -51,7 +63,8 @@ const A12 = styled.a`
 `;
 
 const Plus = styled.span`
-  margin-left: 25%;
+    display: relative;
+    margin-left: 35%;
 `;
 
 const Promotion = styled.div`
