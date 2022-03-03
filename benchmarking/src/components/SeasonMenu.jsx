@@ -6,7 +6,7 @@ function SeasonMenu() {
             <Wrap>
                 <Slogan src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Spring_main_slogan.png" />
                 <Lookup>
-                    <A>자세히 보기</A>
+                    <BtnBorder>자세히 보기</BtnBorder>
                 </Lookup>
                 <HalfCircle />
                 <div className="menuWrap">
@@ -25,6 +25,7 @@ const Wrap = styled.div`
     background: linear-gradient( rgb(195, 253, 255) 60%, rgb(255, 211, 218) 40%);
     height: 600px;
     padding-inline: 20%;
+    position: relative;
 `;
 
 const Lookup = styled.div`
@@ -33,7 +34,7 @@ const Lookup = styled.div`
     width: fit-content;
 `;
 
-const A = styled.div`
+const BtnBorder = styled.div`
     z-index: 1;
     padding: 10px;
     padding-inline: 30px;
@@ -53,21 +54,21 @@ const HalfCircle = styled.div`
     height: 220px;
     background: linear-gradient(rgb(153, 252, 255), rgb(252, 197, 206));
     border-radius: 250px 250px 0px 0px;
-    position: relative;
-    right: -45%;
-    top: -29%;
+    position: absolute;
+    right: 25%;
+    top: 29%;
     justify-content: center;
 `;
 
 const Latte = styled.img`
-    position: relative;
+    position: absolute;
     margin-top: -26%;
     margin-left: 15%;
     z-index: 2;
 `;
 
 const StrawberryDrink = styled.img`
-    position: relative;
+    position: absolute;
     padding: 0;
     top: -80px;
     margin-top: -100%;
@@ -76,7 +77,7 @@ const StrawberryDrink = styled.img`
 `;
 
 const StrawberryFrap = styled.img`
-    position: relative;
+    position: absolute;
     padding-bottom: 2%;
     margin-top: -100%;
     margin-left: 76%;
