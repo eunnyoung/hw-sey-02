@@ -15,9 +15,9 @@ function Header() {
                       <Li01>Customer Service & Ideas</Li01>
                       <Hr />
                       <Li01>Find a Store</Li01>
-                      <Button>
+                      <Btn>
                           <img src="https://image.istarbucks.co.kr/common/img/common/icon_magnifier_black.png" alt="magnify" />
-                      </Button>
+                      </Btn>
                   </Nav01>
                   <Nav02>
                       <Li02>
@@ -34,6 +34,11 @@ function Header() {
                       <Li02>STARBUCKS REWARDS</Li02>
                       <Li02>WHAT'S NEW</Li02>
                   </Nav02>
+                  <Nav03>
+                      <img src="https://www.starbucks.co.kr/common/img/common/icon_user_m.png" alt="img" />
+                      <img src="https://www.starbucks.co.kr/common/img/common/icon_spot_m.png" alt="img" />
+                      <img src="https://www.starbucks.co.kr/common/img/common/btn_berger_m.png" alt="img" />
+                  </Nav03>
               </div>
           </Head>
   );
@@ -48,7 +53,7 @@ const Head = styled.div`
     grid-template-columns: 1fr 3fr;
     padding-inline: 20%;
     @media screen and (max-width: 955px) {
-        padding-inline: 3%;
+        padding: 1%;
     }
 `;
 
@@ -59,6 +64,8 @@ const Img = styled.div`
 
 const Logo = styled.img`
     width: 60px;
+    display: flex;
+    align-items: center;
 `;
 
 const Nav01 = styled.ul`
@@ -77,6 +84,9 @@ const Nav02 = styled.ul`
     display: flex;
     justify-content: flex-end;
     margin:0;
+    @media screen and (max-width: 955px) {
+        display: none;
+    }
 `;
 
 const Li01 = styled.li`
@@ -125,6 +135,15 @@ const Hr = styled.hr`
     margin-top: 13px;
 `;
 
-const Button = styled.button`
+const Btn = styled.button`
     margin: 5px;
+`;
+
+const Nav03 = styled.div`
+    height: 30px;
+    display: flex;
+    justify-content: flex-end;
+    @media screen and (min-width: 955px) {
+        display: none;
+    }
 `;

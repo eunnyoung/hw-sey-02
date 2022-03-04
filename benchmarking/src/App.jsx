@@ -8,7 +8,7 @@ function App() {
         <>
                 <Header />
                 <SeasonMenu />
-                {/* <NoticeBar /> */}
+                <NoticeBar />
                 {/* <Rewards /> */}
                 <footer></footer>
         </>

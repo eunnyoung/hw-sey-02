@@ -5,7 +5,7 @@ import Link from "react-router";
 
 function NoticeBar() {
   return (
-    <div>
+    // <div>
       <MidBar>
           <Notice>
               <Text>
@@ -16,16 +16,14 @@ function NoticeBar() {
                       <A12>Third item</A12>
                   </TextLoop>
               </Text>
-              <Plus>
-                  <BsPlusCircle size="36px" />
-              </Plus>
+                  <BtnPlus src="https://www.starbucks.co.kr/common/img/common/btn_notice_plus.png" size="36px" />
           </Notice>
           <Promotion>
               <A2>스타벅스 프로모션</A2>
-              <Img src="https://image.istarbucks.co.kr/common/img/common/btn_prom_down.png" alt="img" />
+              <BtnDown src="https://image.istarbucks.co.kr/common/img/common/btn_prom_down.png" alt="img" />
           </Promotion>
       </MidBar>
-    </div>
+    // </div>
 
   );
 }
@@ -35,6 +33,7 @@ export default NoticeBar;
 const MidBar = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
+  /* top: -70%; */
   height: 5em;
 `;
 
@@ -62,9 +61,10 @@ const A12 = styled.a`
   }
 `;
 
-const Plus = styled.span`
+const BtnPlus = styled.img`
     display: relative;
     margin-left: 35%;
+    height: 35px;
 `;
 
 const Promotion = styled.div`
@@ -79,6 +79,7 @@ const A2 = styled.a`
   font-weight: bold;
 `;
 
-const Img = styled.img`
+const BtnDown = styled.img`
   margin-left: 10%;
+  height: 35px;
 `;

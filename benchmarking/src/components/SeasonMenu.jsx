@@ -10,8 +10,8 @@ function SeasonMenu() {
                 <HalfCircle />
                 <div className="menuWrap">
                     <Latte src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_latte.png" alt="img" />
-                    {/* <StrawberryDrink src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_drink_2.png" alt="img" /> */}
-                    {/* <StrawberryFrap src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_frappuccino_0203.png" alt="img" /> */}
+                    <StrawberryDrink src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_drink_2.png" alt="img" />
+                    <StrawberryFrap src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_frappuccino_0203.png" alt="img" />
                 </div>
             </Wrap>
     );
@@ -19,19 +19,27 @@ function SeasonMenu() {
 
 export default SeasonMenu;
 
-const Wrap = styled.div`
-    background: linear-gradient( rgb(195, 253, 255) 60%, rgb(255, 211, 218) 40%);
-    height: 600px;
-    /* width:100%; */
-    padding-inline: 20%;
-    /* position: relative; */
-    position: absolute;
-`;
+// const Wrap = styled.div`
+//     background: linear-gradient( rgb(195, 253, 255) 60%, rgb(255, 211, 218) 40%);
+//     height: 600px;
+//     /* width:100%; */
+//     right:0;
+//     left: 0;
+//     padding-inline: 20%;
+//     /* position: relative; */
+//     position: absolute;
+//     @media screen and (max-width: 955px) {
+//         padding-inline: 3%;
+//     }
+// `;
 
-const Slogan = styled.img`
-    position: relative;
-    margin-top: 10%;;
-    margin-left: 0;
+const Wrap = styled.div`
+    background: linear-gradient(rgb(195, 253, 255) 60%, rgb(255, 211, 218) 40%);
+    height: 600px;
+    padding-inline: 20%;
+    @media screen and (max-width: 955px) {
+        padding-inline: 3%;
+    }
 `;
 
 const Lookup = styled.div`
@@ -50,26 +58,31 @@ const BtnBorder = styled.div`
     color:rgb(255, 86, 114);
 `;
 
+const Slogan = styled.img`
+    margin-top: 70px;
+    margin-left: 0;
+`;
+
 const HalfCircle = styled.div`
     width: 500px;
     height: 220px;
     background: linear-gradient(rgb(153, 252, 255), rgb(252, 197, 206));
     border-radius: 250px 250px 0px 0px;
-    position: absolute;
-    right: 25%;
-    top: 29%;
+    position: relative;
+    right: -45%;
+    top: -29%;
     justify-content: center;
 `;
 
 const Latte = styled.img`
-    position: absolute;
+    position: relative;
     margin-top: -26%;
     margin-left: 15%;
     z-index: 2;
 `;
 
 const StrawberryDrink = styled.img`
-    position: absolute;
+    position: relative;
     padding: 0;
     top: -80px;
     margin-top: -100%;
@@ -78,7 +91,7 @@ const StrawberryDrink = styled.img`
 `;
 
 const StrawberryFrap = styled.img`
-    position: absolute;
+    position: relative;
     padding-bottom: 2%;
     margin-top: -100%;
     margin-left: 76%;
