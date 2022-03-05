@@ -1,11 +1,12 @@
 import styled, { css } from 'styled-components';
+import Btn from'./atoms/Btn';
 
 function SeasonMenu() {
     return (
             <Wrap>
                 <Slogan src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Spring_main_slogan.png" />
                 <Lookup>
-                    <BtnBorder>자세히 보기</BtnBorder>
+                    <Btn border-color="rgb(255, 122, 144)" color="rgb(255, 86, 114)">자세히 보기</Btn>
                 </Lookup>
                 <HalfCircle />
                 <div className="menuWrap">

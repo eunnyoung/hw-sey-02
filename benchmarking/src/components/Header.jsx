@@ -107,9 +107,10 @@ const Li02 = styled.li`
   margin-top: 10px;
   padding-top: 10px;
   :hover {
-    div {
+    /* text-decoration: underline; */
+    /* div {
       text-decoration: underline;
-    }
+    } */
     color: #00A000;
     background-color: black;
   }
