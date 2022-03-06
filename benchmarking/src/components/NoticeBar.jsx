@@ -1,11 +1,8 @@
 import styled, { css } from 'styled-components';
-import { BsPlusCircle } from "react-icons/bs";
 import TextLoop from "react-text-loop";
-import Link from "react-router";
 
 function NoticeBar() {
   return (
-    // <div>
       <MidBar>
           <Notice>
               <Text>
@@ -23,18 +20,17 @@ function NoticeBar() {
               <BtnDown src="https://image.istarbucks.co.kr/common/img/common/btn_prom_down.png" alt="img" />
           </Promotion>
       </MidBar>
-    // </div>
-
   );
 }
 
 export default NoticeBar;
 
 const MidBar = styled.div`
+position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* top: -70%; */
   height: 5em;
+  top: 600px;
 `;
 
 const Notice = styled.div`

@@ -3,7 +3,7 @@ import Btn from'./atoms/Btn';
 
 function SeasonMenu() {
     return (
-            <Wrap>
+            <Container>
                 <Slogan src="https://image.istarbucks.co.kr/upload/common/img/main/2022/2022_Spring_main_slogan.png" />
                 <Lookup>
                     <Btn border-color="rgb(255, 122, 144)" color="rgb(255, 86, 114)">자세히 보기</Btn>
@@ -14,30 +14,17 @@ function SeasonMenu() {
                     <StrawberryDrink src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_drink_2.png" alt="img" />
                     <StrawberryFrap src="https://image.istarbucks.co.kr/img/event/2022/2022_Strawberry_frappuccino_0203.png" alt="img" />
                 </div>
-            </Wrap>
+            </Container>
     );
 }
 
 export default SeasonMenu;
 
-// const Wrap = styled.div`
-//     background: linear-gradient( rgb(195, 253, 255) 60%, rgb(255, 211, 218) 40%);
-//     height: 600px;
-//     /* width:100%; */
-//     right:0;
-//     left: 0;
-//     padding-inline: 20%;
-//     /* position: relative; */
-//     position: absolute;
-//     @media screen and (max-width: 955px) {
-//         padding-inline: 3%;
-//     }
-// `;
-
-const Wrap = styled.div`
-    background: linear-gradient(rgb(195, 253, 255) 60%, rgb(255, 211, 218) 40%);
+const Container = styled.div`
+    background: linear-gradient( rgb(195, 253, 255) 60%, rgb(255, 211, 218) 40%);
     height: 600px;
     padding-inline: 20%;
+    position: absolute;
     @media screen and (max-width: 955px) {
         padding-inline: 3%;
     }
@@ -47,16 +34,6 @@ const Lookup = styled.div`
     margin-top: 40px;
     margin-left: 100px;
     width: fit-content;
-`;
-
-const BtnBorder = styled.div`
-    z-index: 1;
-    padding: 10px;
-    padding-inline: 30px;
-    border: solid;
-    border-radius: 5px;
-    border-color: rgb(255, 122, 144);
-    color:rgb(255, 86, 114);
 `;
 
 const Slogan = styled.img`
