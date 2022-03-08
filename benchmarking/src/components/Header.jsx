@@ -119,16 +119,21 @@ const Li02 = styled.li`
 const LiTitle = styled.div``;
 
 const Ul =styled.ul`
+    position: absolute;
+    top: 100px;
+    left: 350px;
     list-style: none;
     display:none;
-    ${Li02}:hover & {
+    z-index: 1;
+    /* ${Li02}:hover & { */
         display: block;
-    }
+    /* } */
 `;
 
 const A = styled.li`
-    color: white;
+    color: green;
     text-decoration: none;
+    /* left: 100px; */
 `;
 
 const Hr = styled.hr`
