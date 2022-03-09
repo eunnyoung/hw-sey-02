@@ -20,14 +20,7 @@ function Header() {
                       </Btn>
                   </Nav01>
                   <Nav02>
-                      <Li02>
-                          <LiTitle>COFFEE</LiTitle>
-                          <Ul>
-                              <A>커피</A>
-                              <A>커피 이야기</A>
-                              <A href="#">나와 어울리는 커피</A>
-                          </Ul>
-                      </Li02>
+                      <Li02>COFFEE</Li02>
                       <Li02>MENU</Li02>
                       <Li02>STORE</Li02>
                       <Li02>RESPONSIBILTY</Li02>
@@ -121,7 +114,8 @@ const LiTitle = styled.div``;
 const Ul =styled.ul`
     position: absolute;
     top: 100px;
-    left: 350px;
+    /* left: 350px; */
+    background-color: black;
     list-style: none;
     display:none;
     z-index: 1;
